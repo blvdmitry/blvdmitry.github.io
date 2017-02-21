@@ -1,0 +1,26 @@
+body
+	color: $colors.black
+	font-family: 'Montserrat', sans-serif
+	font-weight: 400
+
+path, use
+	fill: currentColor
+	
+a 
+	color: $colors.blue
+	text-decoration: none
+	position: relative
+	
+	&:after
+		content: ''
+		position: absolute
+		left: 0
+		bottom: 0
+		width: 100%
+		height: 1px
+		background: currentColor
+		transition: opacity .15s ease-in-out
+
+	&:hover
+		&:after
+			opacity: 0

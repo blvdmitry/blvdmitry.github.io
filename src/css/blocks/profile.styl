@@ -1,0 +1,82 @@
+$profileBlock = {
+	colors: {
+		dribbble: #ea4c89,
+		instagram: #bc2a8d,
+		facebook: #3b5998,
+		vkontakte: #45668e,
+		github: #2b2b2b
+	}
+}
+
+.profile
+	background: #fff
+	box-shadow: 0 6px 30px rgba(#000, .12)
+	position: relative
+	text-align: center
+	overflow: hidden
+	padding-bottom: 40px
+
+	&__border
+		border: 6px solid $colors.yellow
+		position: absolute
+		top: 20px
+		left: @top
+		bottom: @top
+		right: @top
+		z-index: 10
+
+	&__inner
+		position: relative
+		z-index: 15
+
+	&__photo
+		overflow: hidden
+		height: 240px
+		transform: rotate(-4deg)
+		width: 110%
+		margin-left: -5%
+		margin-top: -20px
+
+	&__image
+		height: 100%
+		background: url(/dist/img/avatar.jpg) no-repeat 50%
+		background-size: cover
+		transform: rotate(4deg)
+		margin-top: 20px
+
+	&__name
+		margin-top: 20px
+		font-size: 20px
+		font-weight: 600
+
+	&__email
+		font-size: 16px
+		display: inline-block
+		color: $colors.black
+		margin-top: 15px
+		font-weight: 500
+
+	&__actions
+		margin-top: 25px
+		
+	&__social
+		background: #dadada
+		color: $colors.black
+		height: 40px
+		width: @height
+		line-height: @height - 2
+		display: inline-block
+		border-radius: 4px
+		margin-left: 15px
+		text-decoration: none
+
+		&:after
+			content: none
+
+		for $_name, $_color in $profileBlock.colors
+			&_{$_name}:hover
+				background: $_color
+				color: #fff
+
+		&:first-child
+			margin-left: 0
