@@ -3,12 +3,23 @@
   "version": "1.0.0",
   "description": "My personal page ;)",
   "main": "index.js",
+  "watch": {
+    "css": "src/css/{blocks,common}/*.styl"
+  },
   "scripts": {
     "css": "stylus src/css/main.styl --out dist/css/",
-    "icons": "svgstore -o dist/svg/icons.svg src/svg/icons/*.svg"
+    "icons": "svgstore -o dist/svg/icons.svg src/svg/icons/*.svg",
+    "jekyll": "sudo bundle exec jekyll build",
+    "js": "webpack",
+    "watch": "npm-watch"
   },
   "dependencies": {
     "amdefine": "^1.0.1",
+    "babel": "^6.23.0",
+    "babel-cli": "^6.23.0",
+    "babel-loader": "^6.3.2",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-stage-2": "^6.22.0",
     "balanced-match": "^0.4.2",
     "brace-expansion": "^1.1.6",
     "concat-map": "^0.0.1",
@@ -22,6 +33,7 @@
     "minimist": "^0.0.8",
     "mkdirp": "^0.5.1",
     "ms": "^0.7.2",
+    "npm-watch": "^0.1.8",
     "once": "^1.4.0",
     "path-is-absolute": "^1.0.1",
     "sax": "^0.5.8",
@@ -29,6 +41,7 @@
     "stylus": "^0.54.5",
     "svgstore": "^2.0.2",
     "svgstore-cli": "^1.2.1",
+    "webpack": "^2.2.1",
     "wrappy": "^1.0.2"
   },
   "devDependencies": {},

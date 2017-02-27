@@ -9,12 +9,16 @@ $profileBlock = {
 }
 
 .profile
-	background: #fff
-	box-shadow: 0 6px 30px rgba(#000, .12)
 	position: relative
-	text-align: center
-	overflow: hidden
-	padding-bottom: 40px
+	perspective: 1000px
+
+	&__wrapper
+		position: relative
+		overflow: hidden
+		padding-bottom: 40px
+		background: #fff
+		box-shadow: 0 6px 30px rgba(#000, .12)
+		text-align: center
 
 	&__border
 		border: 6px solid $colors.yellow
@@ -28,6 +32,14 @@ $profileBlock = {
 	&__inner
 		position: relative
 		z-index: 15
+
+	&__layer
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 240px
+		z-index: 10
 
 	&__photo
 		overflow: hidden

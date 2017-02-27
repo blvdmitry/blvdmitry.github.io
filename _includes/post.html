@@ -1,0 +1,15 @@
+<div class="post">
+	<a href="{{ postData.url }}" class="post__title">
+		{{ postData.title }}
+	</a>
+
+	<div class="post__info">
+		<span class="post__date">
+			{{ postData.date | date:"%B %-d, %Y" }}
+		</span>
+	</div>
+
+	<div class="post__text">
+		{{ postData.intro }}
+	</div>
+</div>
