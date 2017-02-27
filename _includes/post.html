@@ -1,15 +1,41 @@
 <div class="post">
-	<a href="{{ postData.url }}" class="post__title">
-		{{ postData.title }}
-	</a>
+	<div class="post__top">
+		{% if isDetail %}
+			<span class="post__title">
+				{{ postData.title }}
+			</span>
+		{% else %}
+			<a href="{{ postData.url }}" class="post__title">
+				{{ postData.title }}
+			</a>
+		{% endif %}
 
-	<div class="post__info">
-		<span class="post__date">
-			{{ postData.date | date:"%B %-d, %Y" }}
-		</span>
+		<div class="post__info">
+			<span class="post__date">
+				{{ postData.date | date:"%B %-d, %Y" }}
+			</span>
+
+			<span class="post__tags">
+				{% for tag in postData.tags %}
+					<span class="tag post__tag">
+						{{ tag }}
+					</span>
+				{% endfor %}
+			</span>
+		</div>
+
+		<div class="post__intro">
+			{{ postData.intro }}
+		</div>
 	</div>
 
-	<div class="post__text">
-		{{ postData.intro }}
-	</div>
+	{% if isDetail %}
+		<div class="post__text">
+			{{ content }}
+		</div>
+
+		<a href="/" class="post__home">
+			Back
+		</a>
+	{% endif %}
 </div>

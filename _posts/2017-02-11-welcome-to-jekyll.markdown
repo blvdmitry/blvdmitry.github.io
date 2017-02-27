@@ -1,9 +1,9 @@
 ---
-layout: default
+layout: post
 title:  "Welcome to Jekyll2!"
 intro: "Some intro text"
 date:   2017-02-11 13:58:52 +0300
-categories: jekyll update
+tags: jekyll update
 ---
 
 Hey
