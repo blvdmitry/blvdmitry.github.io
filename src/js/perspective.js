@@ -1,7 +1,5 @@
 class Perspective {
-	constructor(el, options) {
-		this._options = options;
-
+	constructor(el) {
 		this._state = {
 			xHalf: null,
 			yHalf: null,
@@ -15,7 +13,6 @@ class Perspective {
 		};
 
 		this.mouseMoveHandler = this.mouseMoveHandler.bind(this);
-		this.mouseOutHandler = this.mouseOutHandler.bind(this);
 		this.setStyles = this.setStyles.bind(this);
 
 		this.init.call(this);
@@ -31,9 +28,9 @@ class Perspective {
 	setStyles(x, y) {
 		let { parent, move } = this._elems;
 
-		parent.style.transform = `rotateY(${x / 60}deg) rotateX(${-y / 60}deg)`;
+		parent.style.transform = `rotateY(${x / 90}deg) rotateX(${-y / 90}deg)`;
 		move.forEach(el => {
-			el.style.transform = `translateX(${-x / 200}%) translateY(${-y / 200}%)`;
+			el.style.transform = `translateX(${-x / 350}%) translateY(${-y / 350}%)`;
 		});
 	}
 
@@ -45,24 +42,17 @@ class Perspective {
 		this.setStyles(x, y);
 	}
 
-	mouseOutHandler() {
-		// this.setStyles(0, 0);
-	}
-
 	init() {
-		let elParent = this._elems.parent;
-		let rect = elParent.getBoundingClientRect();
-		let xHalf = rect.width / 2;
-		let yHalf = rect.height / 2;
+		let xHalf = window.innerWidth / 2;
+		let yHalf = window.innerHeight / 2;
 
 		this.setState({
 			xHalf, yHalf,
-			xStart: rect.left,
-			yStart: rect.top
+			xStart: 0,
+			yStart: 0
 		});
 
-		elParent.addEventListener('mousemove', this.mouseMoveHandler);
-		elParent.addEventListener('mouseout', this.mouseOutHandler);
+		window.addEventListener('mousemove', this.mouseMoveHandler);
 	}
 }
 

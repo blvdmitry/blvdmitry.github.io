@@ -24,9 +24,11 @@
 			</span>
 		</div>
 
-		<div class="post__intro">
-			{{ postData.intro }}
-		</div>
+		{% unless isDetail %}
+			<div class="post__intro">
+				{{ postData.intro }}
+			</div>
+		{% endunless %}
 	</div>
 
 	{% if isDetail %}

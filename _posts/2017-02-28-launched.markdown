@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "Launched"
+intro: "I've finally found some time to spend on my personal piece of the web. So here it is. Dive into a little story and technical details behind it."
+date:   2017-02-28 07:46:52 +0300
+tags: other
+---
+
+Hey

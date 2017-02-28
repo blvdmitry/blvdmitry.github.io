@@ -84,10 +84,8 @@ var _createClass = function () { function defineProperties(target, props) { for 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var Perspective = function () {
-	function Perspective(el, options) {
+	function Perspective(el) {
 		_classCallCheck(this, Perspective);
-
-		this._options = options;
 
 		this._state = {
 			xHalf: null,
@@ -102,7 +100,6 @@ var Perspective = function () {
 		};
 
 		this.mouseMoveHandler = this.mouseMoveHandler.bind(this);
-		this.mouseOutHandler = this.mouseOutHandler.bind(this);
 		this.setStyles = this.setStyles.bind(this);
 
 		this.init.call(this);
@@ -121,9 +118,9 @@ var Perspective = function () {
 			    move = _elems.move;
 
 
-			parent.style.transform = 'rotateY(' + x / 60 + 'deg) rotateX(' + -y / 60 + 'deg)';
+			parent.style.transform = 'rotateY(' + x / 90 + 'deg) rotateX(' + -y / 90 + 'deg)';
 			move.forEach(function (el) {
-				el.style.transform = 'translateX(' + -x / 200 + '%) translateY(' + -y / 200 + '%)';
+				el.style.transform = 'translateX(' + -x / 350 + '%) translateY(' + -y / 350 + '%)';
 			});
 		}
 	}, {
@@ -141,26 +138,18 @@ var Perspective = function () {
 			this.setStyles(x, y);
 		}
 	}, {
-		key: 'mouseOutHandler',
-		value: function mouseOutHandler() {
-			// this.setStyles(0, 0);
-		}
-	}, {
 		key: 'init',
 		value: function init() {
-			var elParent = this._elems.parent;
-			var rect = elParent.getBoundingClientRect();
-			var xHalf = rect.width / 2;
-			var yHalf = rect.height / 2;
+			var xHalf = window.innerWidth / 2;
+			var yHalf = window.innerHeight / 2;
 
 			this.setState({
 				xHalf: xHalf, yHalf: yHalf,
-				xStart: rect.left,
-				yStart: rect.top
+				xStart: 0,
+				yStart: 0
 			});
 
-			elParent.addEventListener('mousemove', this.mouseMoveHandler);
-			elParent.addEventListener('mouseout', this.mouseOutHandler);
+			window.addEventListener('mousemove', this.mouseMoveHandler);
 		}
 	}]);
 
