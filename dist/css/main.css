@@ -164,13 +164,7 @@ a:hover:after {
   margin-left: 0;
 }
 .post {
-  margin-top: 40px;
-}
-.post:first-child {
-  margin-top: 0;
-}
-.post__top {
-  padding-bottom: 30px;
+  margin-bottom: 40px;
 }
 .post__title {
   font-size: 30px;
@@ -205,8 +199,10 @@ a:hover:after {
   padding-top: 30px;
   font-size: 16px;
   line-height: 26px;
-  border-top: 1px solid #f1f1f1;
   font-weight: 300;
+}
+.post__text:first-child {
+  padding-top: 0;
 }
 .post__text p {
   margin: 30px 0 0;
