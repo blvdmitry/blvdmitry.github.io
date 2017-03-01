@@ -3,7 +3,15 @@ layout: post
 title:  "Launched"
 intro: "I've finally found some time to spend on my personal piece of the web. So here it is. Dive into a little story and technical details behind it."
 date:   2017-02-28 07:46:52 +0300
-tags: other
+tags: general
 ---
 
-Hey
+Hey! I've finally launched my personal page and I believe it will help me share my thoughts and experience with others someday.
+ 
+During the last several years I made a bunch of attempts to make this little goal come true. 
+I spent lots of time making new versions over and over again.
+Some were nice, others got pretty weird by the time they were finished.
+Some got closer to production, others didn't make it through the first several days.
+But this time I was really focused on finishing the project and had a clear vision on how it should be done.
+
+

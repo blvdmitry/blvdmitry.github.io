@@ -36,8 +36,12 @@
 			{{ content }}
 		</div>
 
-		<a href="/" class="post__home">
-			Back
+		<a href="/" class="post__link">
+			&larr; Home
+		</a>
+	{% else %}
+		<a href="{{ postData.url }}" class="post__link">
+			Read more &rarr;
 		</a>
 	{% endif %}
 </div>

@@ -210,14 +210,14 @@ a:hover:after {
 .post__text p:first-child {
   margin-top: 0;
 }
-.post__home {
+.post__link {
   display: inline-block;
   margin: 20px 0;
 }
-.post__home:first-child {
+.post__link:first-child {
   margin-top: 0;
 }
-.post__home:last-child {
+.post__link:last-child {
   margin-bottom: 0;
 }
 .highlight {
