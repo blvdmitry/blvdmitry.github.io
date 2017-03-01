@@ -227,6 +227,9 @@ a:hover:after {
   padding: 20px;
   border-radius: 4px;
 }
+.emoji {
+  vertical-align: baseline;
+}
 .icon {
   display: inline-block;
   vertical-align: middle;

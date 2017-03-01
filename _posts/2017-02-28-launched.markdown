@@ -12,6 +12,24 @@ During the last several years I made a bunch of attempts to make this little goa
 I spent lots of time making new versions over and over again.
 Some were nice, others got pretty weird by the time they were finished.
 Some got closer to production, others didn't make it through the first several days.
-But this time I was really focused on finishing the project and had a clear vision on how it should be done.
+Anyway none of them were released.
 
+This time I was really focused on finishing the project and had a clear vision on how it should be done.
+When you have this kind of focus you really start to move and think faster. No more dreamy moments about your future page while it's not even live.
+
+It took just a day or two to think of the layout in my head and visualize it in Sketch then.
+Then it was all about coding. 
+I decided to host it on GitHub with the help of GitHub Pages functionality.
+Luckily it supports Jekyll templates and one can write his posts without the need of implementing wysiwygs or any other complex functionality.
+Just add or edit your markdown file and you are ready to go.
+That makes even more motivated about the posting in the future.
+
+Speaking of technical side of the page - everything is quite basic.
+This is my second :truck: Yarn tryout and I really like it by now.
+I use webpack for building my js, stylus for preprocessing css and run all the build commands via npm scripts from package.json file.
+Thus it is just about running ine main script to build the whole page or to make the system watch the changes and update the output.
+ 
+That's all for now but I believe there will be several new posts soon with some stuff I got over time. 
+ 
+Cya! 
 

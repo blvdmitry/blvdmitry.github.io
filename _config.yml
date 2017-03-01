@@ -27,6 +27,8 @@ githubUsername:  BananaBobby
 markdown: kramdown
 gems:
   - jekyll-feed
+  - jemoji
+
 exclude:
   - Gemfile
   - Gemfile.lock
