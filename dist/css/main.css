@@ -33,10 +33,10 @@ a:hover:after {
 .layout__sidebar {
   width: 360px;
   float: left;
-  padding-right: 100px;
 }
 .layout__content {
   overflow: hidden;
+  padding-left: 100px;
 }
 .icons-store {
   display: none;
@@ -114,6 +114,7 @@ a:hover:after {
   border-radius: 4px;
   margin-left: 15px;
   text-decoration: none;
+  font-size: 20px;
 }
 .profile__social:after {
   content: none;
@@ -165,6 +166,27 @@ a:hover:after {
 }
 .post {
   margin-bottom: 40px;
+}
+.post__top {
+  position: relative;
+}
+.post__back {
+  position: absolute;
+  color: #000;
+  left: -36px;
+  top: 0;
+  line-height: 38px;
+  transition: transform 0.15s ease-in-out, opacity 0.15s ease-in-out;
+  opacity: 0.3;
+  font-size: 24px;
+}
+.post__back:after {
+  content: none;
+}
+.post__back:hover {
+  transform: translateX(-8px);
+  padding-right: 8px;
+  opacity: 1;
 }
 .post__title {
   font-size: 30px;
@@ -235,7 +257,6 @@ a:hover:after {
   vertical-align: middle;
   width: 1em;
   height: 1em;
-  font-size: 20px;
 }
 .tag {
   background: #eee;

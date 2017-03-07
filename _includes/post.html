@@ -1,6 +1,9 @@
 <div class="post">
 	<div class="post__top">
 		{% if isDetail %}
+			<a href="/" class="post__back">
+				<svg class="icon"><use xlink:href="#left" /></svg>
+			</a>
 			<span class="post__title">
 				{{ postData.title }}
 			</span>

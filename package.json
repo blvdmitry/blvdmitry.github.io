@@ -8,7 +8,7 @@
   },
   "scripts": {
     "css": "stylus src/css/main.styl --out dist/css/",
-    "icons": "svgstore -o dist/svg/icons.svg src/svg/icons/*.svg",
+    "icons": "svgstore -o _includes/icons.svg src/svg/icons/*.svg",
     "jekyll": "sudo bundle exec jekyll build",
     "js": "webpack",
     "watch": "npm-watch"

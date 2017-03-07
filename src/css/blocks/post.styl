@@ -1,6 +1,27 @@
 .post
 	margin-bottom: 40px
 
+	&__top
+		position: relative
+
+	&__back
+		position: absolute
+		color: #000
+		left: -36px
+		top: 0
+		line-height: 38px
+		transition: transform .15s ease-in-out, opacity .15s ease-in-out
+		opacity: .3
+		font-size: 24px
+
+		&:after
+			content: none
+
+		&:hover
+			transform: translateX(-8px)
+			padding-right: 8px
+			opacity: 1
+
 	&__title
 		font-size: 30px
 		font-weight: 700
