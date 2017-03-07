@@ -8,7 +8,7 @@ tags: UI Concept
 
 Couple of months ago I've spent some time on leveling up my design skills and made a concept of Booking.com index page. Finally I have my own place to showcase it!
 
-When I started with my challenged I decided not to jump fully in the design of the whole page itself but to start with separate UI components.
+When I started with my challenge I decided not to jump directly into the design of the whole page itself but to start with separate UI components.
 To start from the foundation. 
 Personally, for me, foundations are form controls like text inputs, dropdowns or buttons so that was a matter of minutes before started building them.
 
@@ -26,7 +26,7 @@ Even though A/B testing shows that one of options won - there may be a better lo
 I believe that space should be used to make user experience same or at least similar for different pages.
 So the second goal was to make the UI recognizable but clean.
 
-After some evenings of working I stopped on this one:
+After a couple evenings of working I stopped on this one:
 
 ![](/dist/img/posts/bundle.jpg)
 

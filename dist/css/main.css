@@ -32,11 +32,13 @@ a:hover:after {
 }
 .layout__sidebar {
   width: 360px;
+  position: fixed;
+  top: 40px;
   float: left;
 }
 .layout__content {
   overflow: hidden;
-  padding-left: 100px;
+  padding-left: 460px;
 }
 .icons-store {
   display: none;
