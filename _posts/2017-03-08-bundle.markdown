@@ -1,0 +1,35 @@
+---
+layout: post
+title:  "B.undle - Booking.com Design Concept"
+intro: "Couple of months ago I've spent some time on leveling up my design skills and made a concept of Booking.com index page. Finally I have my own place to showcase it!"
+date:   2017-03-08 01:46 +0300
+tags: UI Concept
+---
+
+Couple of months ago I've spent some time on leveling up my design skills and made a concept of Booking.com index page. Finally I have my own place to showcase it!
+
+When I started with my challenged I decided not to jump fully in the design of the whole page itself but to start with separate UI components.
+To start from the foundation. 
+Personally, for me, foundations are form controls like text inputs, dropdowns or buttons so that was a matter of minutes before started building them.
+
+After they were done I was ready to jump to some page complex elements as I needed to add some guidelines before I get into drawing the whole page.
+I ended up making country cards and felt ready to move on.
+
+During the last part of the session a set up some goals:
+
+- The functionality must be the same as the current version of Booking.com main page. 
+They are not ones who change the design just to make it look shiny with no real profit, but ones who test every change with A/B testing.
+As for me, I tried to focus on working with Sketch instead of making some UI that wouldn't make it live in a real company.
+
+- Booking faces lots of challenges of working with data everyday and when you change your UI by tiny steps it can become messy sometimes. 
+Even though A/B testing shows that one of options won - there may be a better looking realization of the feature with same statistics.
+I believe that space should be used to make user experience same or at least similar for different pages.
+So the second goal was to make the UI recognizable but clean.
+
+After some evenings of working I stopped on this one:
+
+![](/dist/img/posts/bundle.jpg)
+
+Check out all of the shots in my [Dribbble profile](https://dribbble.com/BananaBobby) 
+
+

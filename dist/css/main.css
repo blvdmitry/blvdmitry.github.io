@@ -232,6 +232,15 @@ a:hover:after {
 .post__text p:first-child {
   margin-top: 0;
 }
+.post__text img {
+  max-width: 100%;
+}
+.post__text li {
+  margin-top: 20px;
+}
+.post__text li:first-child {
+  margin-top: 0;
+}
 .post__link {
   display: inline-block;
   margin: 20px 0;
