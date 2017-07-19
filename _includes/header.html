@@ -1,12 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Dmitry Belyaev</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="shortcut icon" href="/dist/img/favicon.png">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
 		<link href="/dist/css/main.css" rel="stylesheet" media="all" />
+
+		<link rel="canonical" href="https://bananabobby.github.io/">
+		<title>Dmitry Belyaev | Frontend Developer</title>
+		<meta name="description" content="Hi there! I’m a passionate front-end developer based in Moscow, Russia and working @ SuperJob. I love building clean and functional user interfaces and sometimes designing them as well.">
+
+		{% if jekyll.environment == "production" %}
+			<script>
+			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			  ga('create', 'UA-102821815-1', 'auto');
+			  ga('send', 'pageview');
+			</script>
+		{% else %}
+			<script>
+			  window.ga = function (...args) {
+				console.log('ga', args);
+			  };
+			</script>
+		{% endif %}
 	</head>
 	<body>
 		<div class="icons-store">
