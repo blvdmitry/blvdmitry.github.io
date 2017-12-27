@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #85A5D4;
+  font-family: Roboto, sans-serif;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.root {
+  width: 900px;
+  margin: 100px auto;
+}
+
+.card {
+  border-radius: 4px;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 22px 50px rgba(14,21,47, .2), 0 8px 20px rgba(14,21,47, .2);
+}
+
+.item {
+  display: inline-block;
+  vertical-align: top;
+  width: 33.33%;
+  padding: 20px 40px;
+  text-align: center;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #5673D5;
+  border-radius: 4px;
+  transition: background 0.15s ease-in-out;
+}
+
+.item:hover {
+  background: #f6f6f6;
+}
+
+.item__image {
+  width: 70px;
+  margin-bottom: 20px;
+}
+
+.item__title {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.item__text {
+  margin: 20px 0;
+  color: #A7A7A7;
+}
+
+.item__value {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.item__currency {
+  font-size: 14px;
+}
