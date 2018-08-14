@@ -26,12 +26,12 @@ a:hover:after {
   opacity: 0;
 }
 .layout {
-  padding: 40px 0;
-  width: 1200px;
+  padding: 40px;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   box-sizing: border-box;
 }
 .layout__sidebar {
@@ -42,6 +42,22 @@ a:hover:after {
   padding-left: 80px;
   font-size: 22px;
   line-height: 40px;
+}
+.layout__content p:first-child {
+  margin-top: 0;
+}
+.layout__content p:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 960px) {
+  .layout {
+    flex-direction: column;
+    align-items: start;
+  }
+  .layout .layout__content {
+    padding-left: 0;
+    padding-top: 40px;
+  }
 }
 .icons-store {
   display: none;
@@ -55,8 +71,9 @@ a:hover:after {
   overflow: hidden;
   padding-bottom: 40px;
   background: #fff;
-  box-shadow: 0 6px 30px rgba(0,0,0,0.12);
+  box-shadow: 0 8px 50px rgba(0,0,0,0.12);
   text-align: center;
+  border-radius: 4px;
 }
 .profile__border {
   border: 6px solid #feb403;
