@@ -162,6 +162,10 @@ a:hover:after {
   background: #2b2b2b;
   color: #fff;
 }
+.profile__social_twitter:hover {
+  background: #1b95e0;
+  color: #fff;
+}
 .profile__social:first-child {
   margin-left: 0;
 }
