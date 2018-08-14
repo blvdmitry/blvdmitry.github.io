@@ -29,16 +29,19 @@ a:hover:after {
   padding: 40px 0;
   width: 1200px;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  box-sizing: border-box;
 }
 .layout__sidebar {
   width: 360px;
-  position: fixed;
-  top: 40px;
-  float: left;
+  min-width: 360px;
 }
 .layout__content {
-  overflow: hidden;
-  padding-left: 460px;
+  padding-left: 80px;
+  font-size: 22px;
+  line-height: 40px;
 }
 .icons-store {
   display: none;
