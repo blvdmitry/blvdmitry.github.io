@@ -13,6 +13,9 @@ $profileBlock = {
 	position: relative
 	perspective: 1000px
 
+	@media (max-width: 440px)
+		margin: -41px -41px 0;
+
 	&__wrapper
 		position: relative
 		overflow: hidden
@@ -53,7 +56,7 @@ $profileBlock = {
 
 	&__image
 		height: 100%
-		background: url(/dist/img/avatar.jpg) no-repeat 50%
+		background: url(/dist/img/avatar_new.jpg) no-repeat 50%
 		background-size: cover
 		transform: rotate(4deg)
 		margin-top: 20px
