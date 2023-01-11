@@ -32,7 +32,7 @@
     "minimatch": "^3.0.3",
     "minimist": "^0.0.8",
     "mkdirp": "^0.5.1",
-    "ms": "^0.7.2",
+    "ms": "^2.0.0",
     "npm-watch": "^0.1.8",
     "once": "^1.4.0",
     "path-is-absolute": "^1.0.1",
